@@ -9,46 +9,33 @@
         {% endblock %}
     </head>
     <body>
-        
+      
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="https://www.rvce.edu.in"> RVCE MarketPlace </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="https://www.rvce.edu.in"> RVCE  </a>
+
+            <a class="navbar-brand" href="{% url 'homepage' %}"> Home  </a>
         
-            <a class="navbar-brand" href="{% url 'booksearch' %}"> Books  </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> 
+            <a class="navbar-brand" href="{% url 'bookpage' %}"> Books  </a>
 
-            <a class="navbar-brand" href="https://www.flipkart.com"> Stationery  </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="{% url 'get_stationery' %}"> Stationery  </a>
 
-            <a class="navbar-brand" href="https://www.facebook.com"> Lab Equipments </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
+            <a class="navbar-brand" href="{% url 'get_notes' %}"> Notes  </a>
 
-            <a class="navbar-brand" href="https://www.facebook.com"> Buy/Sell </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="{% url 'get_equip' %}"> Project/Lab Equipments </a>            
 
-              <form class="form-inline" >
-                <input class="form-control mr-sm-2" float="right" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-              </form>
+            <a class="navbar-brand" href="{% url 'buy_sell' %}"> Buy/Sell </a>
             </div>
+            <button type="button" class="btn btn-success"> LOGIN </button>    <button type="button" class="btn btn-primary"> REGISTER </button>
           </nav>
 
 
         <div class="container">
-        Welcome to my E-store!!!
-        <hr>
+          <marquee scrollamount="20" behavior="alternate"><h2> Welcome to Estore</h2></marquee>
+          <p>
         <br>
+
+        <center><button type="button" class="btn btn-success"> LOGIN </button>  <button type="button" class="btn btn-primary"> REGISTER </button></center>
+        <a href="{% url 'bookpage' %}">Go to bookpage</a>
         {% block body %}
 
         {% endblock %}

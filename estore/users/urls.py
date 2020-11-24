@@ -3,7 +3,11 @@ from . import views as user_view
 
 
 urlpatterns=[
-    url('welcome/',user_view.welcome_page,name='welcome'),
-    url('',user_view.homepage,name='homepage'),
-    url('books/',user_view.books_page,name='booksearch'),
+    url('welcome/',user_view.welcome_page),
+    url('home/',user_view.homepage,name='homepage'),
+    url('books/',user_view.book_page,name='bookpage'),
+    url('buy-sell/',user_view.buy_sell,name='buy_sell'),
+    url('get-notes/',user_view.get_notes,name='get_notes'),
+    url('get-equip/',user_view.get_equip,name='get_equip'),
+    url('get_stationery/',user_view.get_stationery,name='get_stationery'),
 ]
