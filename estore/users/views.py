@@ -23,3 +23,7 @@ def get_equip(request):
 
 def get_stationery(request):
     return render(request,"users/stationery.html")
+
+def login_page(request):
+    print(request.POST)
+    return render(request,"users/login_page.html")

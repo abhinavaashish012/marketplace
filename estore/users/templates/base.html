@@ -25,7 +25,7 @@
 
             <a class="navbar-brand" href="{% url 'buy_sell' %}"> Buy/Sell </a>
             </div>
-            <button type="button" class="btn btn-success"> LOGIN </button>    <button type="button" class="btn btn-primary"> REGISTER </button>
+            <button type="button" class="btn btn-success"> <a href="{% url 'login_page' %}">LOGIN </a></button> <button type="button" class="btn btn-primary"> REGISTER </button>
           </nav>
 
 
@@ -34,7 +34,7 @@
           <p>
         <br>
 
-        <center><button type="button" class="btn btn-success"> LOGIN </button>  <button type="button" class="btn btn-primary"> REGISTER </button></center>
+        <center><button type="button" class="btn btn-success"> <a href="{% url 'login_page' %}">LOGIN </a></button>  <button type="button" class="btn btn-primary"> REGISTER </button></center>
         <a href="{% url 'bookpage' %}">Go to bookpage</a>
         {% block body %}
 
