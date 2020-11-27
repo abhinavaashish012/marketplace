@@ -11,4 +11,5 @@ urlpatterns=[
     url('get-equip/',user_view.get_equip,name='get_equip'),
     url('get_stationery/',user_view.get_stationery,name='get_stationery'),
     url('login_page/',user_view.login_page,name='login_page'),
+    url("register/", user_view.register, name="register"),
 ]
